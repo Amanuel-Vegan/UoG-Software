@@ -26,7 +26,7 @@ namespace UserManagement.Controller
             _context.User.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("Get User",new {id = user.Id }, user);
+            return CreatedAtAction("PostUser", new { id = user.Id }, user);
         }
     }
 }
