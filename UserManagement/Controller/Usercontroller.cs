@@ -23,5 +23,11 @@ namespace UserManagement.Controller
             _Context.SaveChanges();
             return CreatedAtAction("AddUser", user);
         }
+
+        [HttpGet]
+        public  List<User> GetUsers() 
+        {
+            return _Context.User.ToList();
+        }
     }
 }
