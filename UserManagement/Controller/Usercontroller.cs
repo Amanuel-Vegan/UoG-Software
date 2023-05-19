@@ -18,7 +18,7 @@ namespace UserManagement.Controller
         [HttpPost]
         public ActionResult<User> AddUser(User user)
         {
-
+            Amanue eshete
             _Context.User.Add(user);
             _Context.SaveChanges();
             return CreatedAtAction("AddUser", user);
